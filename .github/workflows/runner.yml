@@ -1,0 +1,14 @@
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build
+        run: echo "Building on local server"
+
+      - name: Create directory and file
+        run: |
+          mkdir -p output/logs
+          echo "Log generated on $(date)" > output/logs/info.txt
+          cat output/logs/info.txt
