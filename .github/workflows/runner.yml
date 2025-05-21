@@ -1,6 +1,11 @@
+name: Local Build and Deploy
+on:
+  push:
+    branches:
+      - main
 jobs:
   build:
-    runs-on: gate-proj
+    runs-on: [self-hosted, gate-proj]
     steps:
       - uses: actions/checkout@v3
 
