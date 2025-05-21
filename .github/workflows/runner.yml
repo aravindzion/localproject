@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build:
-    runs-on: [self-hosted, gate-proj]
+    runs-on: gate-proj
     steps:
       - uses: actions/checkout@v3
 
