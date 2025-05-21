@@ -1,6 +1,6 @@
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: gate-proj
     steps:
       - uses: actions/checkout@v3
 
